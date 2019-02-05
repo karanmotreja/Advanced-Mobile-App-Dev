@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Eminem</string>
+		<key>albums</key>
+		<array>
+			<string>The Slim Shady LP</string>
+			<string>The Marshall Mathers LP</string>
+			<string>Encore</string>
+			<string>Recovery</string>
+			<string>Kamikaze</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Kanye West</string>
+		<key>albums</key>
+		<array>
+			<string>Graduation</string>
+			<string>The College Dropout</string>
+			<string>Ye</string>
+			<string>Yeezus</string>
+			<string>Late Registration</string>
+		</array>
+	</dict>
+</array>
+</plist>

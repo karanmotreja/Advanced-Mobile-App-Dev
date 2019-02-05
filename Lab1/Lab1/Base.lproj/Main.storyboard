@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Artists-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Lab1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JhR-fd-ONv">
+                                <rect key="frame" x="18" y="86" width="343" height="286"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="8Z1-WB-wLu"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="HDP-If-f6Z"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Picker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFG-8z-82q">
+                                <rect key="frame" x="16" y="54" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffl-GW-eSG">
+                                <rect key="frame" x="14" y="398" width="347" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="JhR-fd-ONv" secondAttribute="trailing" constant="14" id="KTJ-DA-qFH"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="PFG-8z-82q" secondAttribute="trailing" constant="16" id="LYF-Pp-TQ1"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="ffl-GW-eSG" secondAttribute="bottom" constant="189" id="MGI-8T-Sb6"/>
+                            <constraint firstItem="PFG-8z-82q" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="34" id="eYV-6w-SKz"/>
+                            <constraint firstItem="ffl-GW-eSG" firstAttribute="top" secondItem="JhR-fd-ONv" secondAttribute="bottom" constant="26" id="goA-wy-L7i"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="ffl-GW-eSG" secondAttribute="trailing" constant="14" id="k2J-A0-oEd"/>
+                            <constraint firstItem="PFG-8z-82q" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="oI6-vg-fpz"/>
+                            <constraint firstItem="JhR-fd-ONv" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="18" id="ran-dp-mut"/>
+                            <constraint firstItem="JhR-fd-ONv" firstAttribute="top" secondItem="PFG-8z-82q" secondAttribute="bottom" constant="8" id="rsr-kY-PRG"/>
+                            <constraint firstItem="ffl-GW-eSG" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="14" id="tq6-T9-8fR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Artists" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="artistPicker" destination="JhR-fd-ONv" id="xIc-s7-Vl1"/>
+                        <outlet property="choiceLabel" destination="ffl-GW-eSG" id="PXf-pc-40v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+        </scene>
+        <!--Music-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Lab1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7h-7C-tTo">
+                                <rect key="frame" x="143" y="297" width="89" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Listen"/>
+                                <connections>
+                                    <action selector="gotomusic:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="99R-Ax-wWu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D7h-7C-tTo" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="I7h-9w-Y7O"/>
+                            <constraint firstItem="D7h-7C-tTo" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" constant="1" id="OWB-16-tkN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Music" image="second" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
+        <!--Record-->
+        <scene sceneID="2wr-3p-MCf">
+            <objects>
+                <viewController id="xy4-5J-VCp" customClass="ViewController" customModule="Lab1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lsa-z2-fLT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkB-GI-BAh">
+                                <rect key="frame" x="119" y="89" width="136" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="xy4-5J-VCp" eventType="touchUpInside" id="tUg-jx-yjh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJQ-oI-IJn">
+                                <rect key="frame" x="119" y="201" width="136" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playAudio:" destination="xy4-5J-VCp" eventType="touchUpInside" id="O39-PG-gFb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEZ-LI-XOW">
+                                <rect key="frame" x="119" y="314" width="136" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopAudio:" destination="xy4-5J-VCp" eventType="touchUpInside" id="QCW-ni-Mka"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HJQ-oI-IJn" firstAttribute="leading" secondItem="0ZL-Kf-emu" secondAttribute="leading" constant="119" id="12i-SW-9Dk"/>
+                            <constraint firstItem="dEZ-LI-XOW" firstAttribute="top" secondItem="HJQ-oI-IJn" secondAttribute="bottom" constant="74" id="5Tx-1P-L8V"/>
+                            <constraint firstItem="0ZL-Kf-emu" firstAttribute="trailing" secondItem="dEZ-LI-XOW" secondAttribute="trailing" constant="120" id="9zD-eF-ynG"/>
+                            <constraint firstItem="HJQ-oI-IJn" firstAttribute="top" secondItem="lkB-GI-BAh" secondAttribute="bottom" constant="73" id="MPn-NG-ta1"/>
+                            <constraint firstItem="lkB-GI-BAh" firstAttribute="leading" secondItem="0ZL-Kf-emu" secondAttribute="leading" constant="119" id="Qbk-Vu-cLF"/>
+                            <constraint firstItem="0ZL-Kf-emu" firstAttribute="trailing" secondItem="HJQ-oI-IJn" secondAttribute="trailing" constant="120" id="Rut-n7-xTD"/>
+                            <constraint firstItem="0ZL-Kf-emu" firstAttribute="trailing" secondItem="lkB-GI-BAh" secondAttribute="trailing" constant="120" id="XPU-rg-vmN"/>
+                            <constraint firstItem="dEZ-LI-XOW" firstAttribute="top" secondItem="HJQ-oI-IJn" secondAttribute="bottom" constant="74" id="bAe-Ee-iyI"/>
+                            <constraint firstItem="lkB-GI-BAh" firstAttribute="top" secondItem="0ZL-Kf-emu" secondAttribute="top" constant="69" id="btT-2A-Is6"/>
+                            <constraint firstItem="dEZ-LI-XOW" firstAttribute="leading" secondItem="0ZL-Kf-emu" secondAttribute="leading" constant="119" id="cJ1-FP-Q8Z"/>
+                            <constraint firstItem="0ZL-Kf-emu" firstAttribute="bottom" secondItem="dEZ-LI-XOW" secondAttribute="bottom" constant="265" id="edu-V4-AYC"/>
+                            <constraint firstItem="HJQ-oI-IJn" firstAttribute="top" secondItem="lkB-GI-BAh" secondAttribute="bottom" constant="73" id="pCg-HN-gKq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0ZL-Kf-emu"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Record" image="third" id="RYZ-tb-rVe"/>
+                    <connections>
+                        <outlet property="playButton" destination="HJQ-oI-IJn" id="eMY-o8-TmQ"/>
+                        <outlet property="recordButton" destination="lkB-GI-BAh" id="eKq-Dy-Yhb"/>
+                        <outlet property="stopButton" destination="dEZ-LI-XOW" id="1bm-D1-ZCx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aug-lp-ERk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-735.20000000000005" y="616.64167916041981"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="xy4-5J-VCp" kind="relationship" relationship="viewControllers" id="ArG-2Z-kSZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="15" height="24"/>
+        <image name="second" width="17" height="29"/>
+        <image name="third" width="30" height="30"/>
+    </resources>
+</document>
