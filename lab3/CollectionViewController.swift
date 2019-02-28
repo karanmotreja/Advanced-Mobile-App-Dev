@@ -60,7 +60,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         let image = UIImage(named: ninerImages[indexPath.row])
         
         //create new size
-        let newSize = CGSize(width: (image?.size.width)!/3.9, height: (image?.size.height)!/3.9)
+        let newSize = CGSize(width: (image?.size.width)!/4.1, height: (image?.size.height)!/4.1)
         
         
         UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)

@@ -55,7 +55,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="av1-So-Yij">
-                                    <rect key="frame" x="85" y="15" width="205" height="21"/>
+                                    <rect key="frame" x="8" y="15" width="359" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
@@ -65,8 +65,8 @@
                             <constraints>
                                 <constraint firstAttribute="bottomMargin" secondItem="av1-So-Yij" secondAttribute="bottom" constant="6" id="Hf1-z5-EtE"/>
                                 <constraint firstItem="av1-So-Yij" firstAttribute="top" secondItem="3La-oQ-6wf" secondAttribute="topMargin" constant="7" id="ReL-lR-YoR"/>
-                                <constraint firstItem="av1-So-Yij" firstAttribute="leading" secondItem="3La-oQ-6wf" secondAttribute="leadingMargin" constant="77" id="ZZc-AS-BUG"/>
-                                <constraint firstAttribute="trailingMargin" secondItem="av1-So-Yij" secondAttribute="trailing" constant="77" id="pK5-OZ-dJg"/>
+                                <constraint firstItem="av1-So-Yij" firstAttribute="leading" secondItem="3La-oQ-6wf" secondAttribute="leadingMargin" id="ZZc-AS-BUG"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="av1-So-Yij" secondAttribute="trailing" id="pK5-OZ-dJg"/>
                             </constraints>
                             <connections>
                                 <outlet property="headerLabel" destination="av1-So-Yij" id="sxR-NV-ah7"/>
