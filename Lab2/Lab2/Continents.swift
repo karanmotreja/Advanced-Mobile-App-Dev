@@ -30,29 +30,6 @@ class ContinentsDataModelController
         return docDir.appendingPathComponent(datafile)
     }
     
-    
-    func writeData()
-    {
-        let dataFileURL = getDataFile(datafile: datafilename)
-        print(dataFileURL)
-        
-        let plistencoder = PropertyListEncoder()
-        plistencoder.outputFormat = .xml
-        do
-        {
-            let data = try plistencoder.encode(allData.self)
-            try data.write(to: dataFileURL)
-        }
-        catch
-        {
-            print(error)
-        }
-        
-    }
-    
-    
-    
-    
     func loadData()
     {
         let pathURL:URL?
@@ -119,4 +96,25 @@ class ContinentsDataModelController
     {
         allData[index].countries.remove(at: countryIndex)
     }
+
+    func writeData()
+    {
+        let dataFileURL = getDataFile(datafile: datafilename)
+        print(dataFileURL)
+        
+        let plistencoder = PropertyListEncoder()
+        plistencoder.outputFormat = .xml
+        do
+        {
+            let data = try plistencoder.encode(allData.self)
+            try data.write(to: dataFileURL)
+        }
+        catch
+        {
+            print(error)
+        }
+        
+    }
+    
+
 }

@@ -19,19 +19,16 @@ class ViewController: UITableViewController {
         continentsData.loadData()
         continentList = continentsData.getContinents()
         
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
         //Data Persistence
-      //  let app = UIApplication.shared
-        
-      //  NotificationCenter.default.addObserver(self, selector: #selector(ViewController.applicationWillResignActive(_:)), name: //NSNotification.Name.UIApplicationWillResignActive, object: app)
-        // Do any additional setup after loading the view, typically from a nib.
-        
-         navigationController?.navigationBar.prefersLargeTitles = true
+//        let app = UIApplication.shared
+//
+//        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.applicationWillResignActive(_:)), name: NSNotification.Name.UIApplicationWillResignActive, object: app)
+//
     }
     
-//    @objc func applicationWillResignActive(_notification: NSNotification)
-//    {
-//        continentsData.writeData()
-//    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return continentList.count
@@ -63,6 +60,15 @@ class ViewController: UITableViewController {
         }
     }
     
-
+//    @objc func applicationWillResignActive(_notification: NSNotification)
+//    {
+//        continentsData.writeData()
+//    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
 }
 
