@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dubs</string>
+    <string name="banner">Banner</string>
+    <string name="player_image">Player picture</string>
+
+    <string name="create_order">Order</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
