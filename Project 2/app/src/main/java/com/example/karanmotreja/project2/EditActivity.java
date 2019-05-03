@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -54,7 +53,7 @@ public class EditActivity extends AppCompatActivity {
         reference = FirebaseDatabase.getInstance().getReference().child("Project2").child("Gift" + keykeyText);
 
 
-        // Deleting items from Firebase Database
+        //  Deleting items from Firebase Database
         deleteButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -79,7 +78,7 @@ public class EditActivity extends AppCompatActivity {
                 });
             }
         });
-
+//
 
 
 

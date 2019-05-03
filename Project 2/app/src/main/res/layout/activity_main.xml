@@ -52,7 +52,7 @@
 
             <Button
                 android:layout_marginTop="35dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="65dp"
                 android:id="@+id/addButton"
                 android:text="+"
                 android:background="@drawable/buttonfab"

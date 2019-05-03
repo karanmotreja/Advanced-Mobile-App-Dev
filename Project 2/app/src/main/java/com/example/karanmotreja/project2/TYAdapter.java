@@ -3,6 +3,7 @@ package com.example.karanmotreja.project2;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,7 +43,6 @@ public class TYAdapter extends RecyclerView.Adapter<TYAdapter.MyViewHolder>
         final String getConfirmationText = myTY.get(i).getConfirmationText();
 
         final String getKeyText = myTY.get(i).getKeyText();
-
 
 
 
