@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "701019740285",
+    "firebase_url": "https://teams-4d710.firebaseio.com",
+    "project_id": "teams-4d710",
+    "storage_bucket": "teams-4d710.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701019740285:android:57ace533f5e4ec2a",
+        "android_client_info": {
+          "package_name": "com.example.karanmotreja.lab10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701019740285-brdn02q6i7apldpuo4i44om135ij7v3p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.karanmotreja.lab10",
+            "certificate_hash": "8b09872e6a972b87fd5a5a63b957206f4bfd37ba"
+          }
+        },
+        {
+          "client_id": "701019740285-vceoei90g30296a0fo41evj3gjfgf4m9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhAdosfKIxc5irCCmIVIZ_8VQtEUpgd44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701019740285-vceoei90g30296a0fo41evj3gjfgf4m9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
